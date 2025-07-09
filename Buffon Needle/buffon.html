@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <title>Buffon’s Needle Method</title>
+  <link rel="stylesheet" href="montecarlo.css">
+</head>
+<body>
+  <div id="contents">
+    <div id="panel">
+      <button id="start" class="normal">start</button>
+      <button id="clear" class="normal">clear</button>
+      <p id="theory"></p>
+      <p id="answer">計算値：0.0000</p>
+    </div>
+    <div id="main">
+      <div id="area1" class="area">
+        <p>　針の落下</p>
+        <canvas id="graph1b" class="myCanvas" width="460" height="460"></canvas>
+        <canvas id="graph1"  class="myCanvas" width="460" height="460"></canvas>
+      </div>
+      <div id="area2" class="area">
+        <p>　π の推定値の収束</p>
+        <canvas id="graph2b" class="myCanvas" width="460" height="240"></canvas>
+        <canvas id="graph2"  class="myCanvas" width="460" height="240"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- 依存順に読み込む -->
+  <script src="./js/nylon.js"></script>
+  <script src="./js/vcanvas.js"></script>
+  <script src="./js/vbtimer.js"></script>
+  <script src="./js/buffon.js"></script>
+</body>
+</html>
